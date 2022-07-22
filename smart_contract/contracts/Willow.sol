@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.11;
 
-import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
-import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
-import "@openzeppelin/contracts/access/Ownable.sol";
-import "@openzeppelin/contracts/utils/Counters.sol";
+import "./../node_modules/@openzeppelin/contracts/token/ERC721/ERC721.sol";
+import "./../node_modules/@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
+import "./../node_modules/@openzeppelin/contracts/access/Ownable.sol";
+import "./../node_modules/@openzeppelin/contracts/utils/Counters.sol";
 
 contract Willow is ERC721, ERC721URIStorage, Ownable {
     using Counters for Counters.Counter;
 
     Counters.Counter private _tokenIdCounter;
     uint256 public fees;
- 
+
     constructor(
         string memory name_,
         string memory symbol_,
@@ -21,7 +21,6 @@ contract Willow is ERC721, ERC721URIStorage, Ownable {
     }
 
     function safeMint(address to, string memory uri) public payable {
-
         require(msg.value >= fees, "Not enough MATIC");
         payable(owner()).transfer(fees);
 
@@ -39,14 +38,13 @@ contract Willow is ERC721, ERC721URIStorage, Ownable {
         if (contractBalance > 0) {
             payable(msg.sender).transfer(address(this).balance);
         }
-
     }
 
     // Override functions
 
     function _burn(uint256 tokenId)
         internal
-        override(ERC721, ERC721URIStorage) 
+        override(ERC721, ERC721URIStorage)
     {
         super._burn(tokenId);
     }
@@ -59,5 +57,4 @@ contract Willow is ERC721, ERC721URIStorage, Ownable {
     {
         return super.tokenURI(tokenId);
     }
-
 }
