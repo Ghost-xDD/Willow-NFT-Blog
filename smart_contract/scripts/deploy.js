@@ -5,7 +5,7 @@ async function main() {
   const willow = await Willow.deploy(
     'Willow Blog',
     'BLOG',
-    '200000000000000000' //0.2 MATIC
+    '500000000000000000' //0.5 MATIC
   );
 
   await willow.deployed();
