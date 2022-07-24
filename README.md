@@ -30,6 +30,30 @@ https://mumbai.polygonscan.com/address/0xa09a983b39614d3f989fe032a3b502cc34dd701
          `REACT_SERVER_URL=<your-moralis-server-url>`
 
          `REACT_APP_ID=<your-moralis-appId>`
+         
+         
+         
+         
+         
+## Project Snapshots
+**HomePage**
+![snippet1](https://user-images.githubusercontent.com/42726051/180662586-faf84f81-0646-42a7-85d6-a2c606f733a0.JPG)
+
+
+
+**Single Post**
+![snippet2](https://user-images.githubusercontent.com/42726051/180662633-7f4c3f50-06fd-4086-be21-9664fd4b0e6d.JPG)
+
+
+
+**Create Blog Post**
+![snippet4](https://user-images.githubusercontent.com/42726051/180662647-9528991e-073f-4fce-90f5-5ab9719104cd.JPG)
+
+
+
+**Blog posts by a specific wallet address**
+![snippet3](https://user-images.githubusercontent.com/42726051/180662692-c7ff2266-7478-463e-beb1-ffacd4916d23.JPG)
+
 
 
 
