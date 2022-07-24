@@ -17,6 +17,8 @@ https://mumbai.polygonscan.com/address/0xa09a983b39614d3f989fe032a3b502cc34dd701
 
 - User can view all blog posts(mints) made by their own wallet address
 
+- User facing demo is deployed to IPFS using Spheron
+
 
 
 ### Quickstart (Client)
