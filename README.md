@@ -11,7 +11,7 @@ https://mumbai.polygonscan.com/address/0xa09a983b39614d3f989fe032a3b502cc34dd701
 
 -  Individual Blog posts are minted as an NFT on the Polygon Mumbai testnet
 
-- Post metadata are saved directly on IPFS
+- Post metadata are saved directly on IPFS using Moralis IPFS API
 
 - Collection of multiple Blog posts(NFTs) from different wallet addresses make up the user's home feed
 
